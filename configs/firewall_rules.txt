@@ -14,3 +14,6 @@ forward-ports:
 source-ports:
 icmp-blocks:
 rich rules:
+
+## Firewall Rules
+![Firewalld rules screenshot](screenshots/rhelhardeningfirewall.png)
