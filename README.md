@@ -38,3 +38,6 @@ This project demonstrates a small virtualized network built using VirtualBox and
 - Add monitoring server (Nagios/Zabbix)
 - Add firewall rules between VMs
 - Add automation with Ansible
+
+### System Updates
+- Appled all available RHEL 10 updates using dnf.
