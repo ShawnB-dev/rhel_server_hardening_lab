@@ -206,7 +206,7 @@ chmod +x system_audit.sh
 - How to secure SSH in a production-like environment  
 - How firewalld manages zones and services  
 - Value of documenting system changes for reproducibility  
-- How to structure a professional GitHub project for IT roles  
+- Demonstrating a professional RHEL setup for IT readiness 
 
 ---
 
