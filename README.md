@@ -1,6 +1,6 @@
 # RHEL 10 Server Hardening Lab
 
-This project demonstrates the setup and hardening of a Red Hat Enterprise Linux 10 server running in VirtualBox. The goal is to apply foundational security practices used in enterprise Linux environments, document the process clearly, and build a professional portfolio project for infrastructure and cybersecurity roles.
+This project demonstrates the setup and hardening of a Red Hat Enterprise Linux 10 server running in VirtualBox. The goal is to apply foundational security practices used in enterprise Linux environments, document the process clearly for infrastructure and cybersecurity roles.
 
 ---
 
