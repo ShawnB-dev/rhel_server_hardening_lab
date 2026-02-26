@@ -21,9 +21,10 @@ This project demonstrates the setup and hardening of a Red Hat Enterprise Linux 
 Applied all available system updates to ensure the server is fully patched.
 
 **Commands Used**
-
-sudo dnf update -y sudo dnf upgrade -y
-
+```bash
+sudo dnf update -y
+sudo dnf upgrade -y
+```
 
 **Screenshot**  
 ![System update screenshot](screenshots/rhelhardeningdnfupdateandupgrade.png)
@@ -35,14 +36,15 @@ sudo dnf update -y sudo dnf upgrade -y
 Created a non-root administrative user and assigned them to the `wheel` group to follow the principle of least privilege.
 
 **Commands Used**
-
+```bash
 sudo useradd shawn-admin 
 sudo passwd shawn-admin 
 sudo usermod -aG wheel shawn-admin
-
+```
 **Verification**
 
-id shawn-admin
+
+`id shawn-admin`
 
 
 **Screenshot**  
@@ -56,38 +58,27 @@ Configured SSH to improve security by disabling root login, disabling password a
 
 **Changes Made in `/etc/ssh/sshd_config`:**
 
-PermitRootLogin no 
-PasswordAuthentication no PubkeyAuthentication yes 
-Port 22
+`PermitRootLogin` no 
+
+`PasswordAuthentication` no
+
+`PubkeyAuthentication` yes 
+
+`Port` 22
 
 **Commands Used**
-
-sudo systemctl restart sshd sudo systemctl status sshd
-
-
-**Screenshot**  
-![SSH status screenshot](screenshots/rhelhardeningsshdconfig.png)
-
-**Configuration File**  
-See: `configs/sshd_config`
-
----
-
-### 2.4 Firewall Configuration (firewalld)
-
-Enabled and configured firewalld to allow only necessary services.
-
-**Commands Used**
-
-sudo systemctl restart sshd
+```bash
+sudo systemctl restart sshd 
 sudo systemctl status sshd
+```
 
-
-**Screenshot**  
+**SSH Status**  
 ![SSH status screenshot](screenshots/rhelhardeningsshdconfig.png)
 
 **Configuration File**  
-See: `configs/sshd_config`
+```bash
+configs/sshd_config
+```
 
 ---
 
@@ -97,18 +88,20 @@ Enabled and configured firewalld to allow only necessary services.
 
 **Commands Used**
 
+```bash
 sudo systemctl enable firewalld --now
 sudo firewall-cmd --add-service=ssh --permanent
 sudo firewall-cmd --reload
 sudo firewall-cmd --list-all
+```
 
-
-**Screenshot**  
+**Firewall Hardening**  
 ![Firewalld rules screenshot](screenshots/rhelhardeningfirewall.png)
 
 **Configuration Output**  
-See: `configs/firewalld_rules.txt`
-
+```bash
+configs/firewalld_rules.txt
+```
 ---
 
 ### 2.5 SELinux Configuration
@@ -117,15 +110,16 @@ Ensured SELinux is running in enforcing mode for mandatory access control.
 
 **Commands Used**
 
+```bash
 getenforce
 sudo vim /etc/selinux/config
-
+```
 **Verification**
-
+```bash
 getenforce
+```
 
-
-**Screenshot**  
+**SELinux Enforcing**  
 ![SELinux enforcing screenshot](screenshots/rhelhardeninggetenforce.png)
 
 ---
@@ -135,15 +129,17 @@ getenforce
 Created a Bash script to generate a basic system audit report including disk usage, memory usage, running services, and failed SSH login attempts.
 
 **Script Location**  
-`scripts/system_audit.sh`
+```bash
+scripts/system_audit.sh
+```
 
 **Commands Used**
-
+```bash
 chmod +x system_audit.sh
 ./system_audit.sh
+```
 
-
-**Screenshot**  
+**Audit Script Output**  
 ![Audit script output screenshot](screenshots/rhelhardeningsystemreport.png)
 
 ---
@@ -173,7 +169,7 @@ All configuration files and command outputs are stored in the `/configs` directo
 ---
 
 ## 5. Commands Used (Full List)
-
+```bash
 sudo useradd shawn-admin
 sudo passwd shawn-admin
 sudo usermod -aG wheel shawn-admin
@@ -195,7 +191,7 @@ sudo reboot
 
 chmod +x system_audit.sh
 ./system_audit.sh
-
+```
 
 ---
 
