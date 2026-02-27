@@ -1,2 +1,38 @@
-# placeholder for sshd_config from RHEL 10
-# will update after hardening steps
+# /etc/ssh/ssh_config
+# System-wide SSH client configuration
+# Matches hardened server settings: key-only auth, no password fallback
+
+# Default settings for all hosts
+Host *
+    ForwardAgent no
+    ForwardX11 no
+    PasswordAuthentication no
+    PubkeyAuthentication yes
+    IdentitiesOnly yes
+    GSSAPIAuthentication no
+    HashKnownHosts yes
+    ServerAliveInterval 60
+    ServerAliveCountMax 3
+    StrictHostKeyChecking ask
+    UserKnownHostsFile ~/.ssh/known_hosts
+    IdentityFile ~/.ssh/id_rsa
+    IdentityFile ~/.ssh/id_ed25519
+
+# Example: Hardened server
+Host myserver
+    HostName 192.168.1.1
+    User shawn
+    Port 22
+    IdentityFile ~/.ssh/id_ed25519
+
+# Example: GitHub
+Host github.com
+    HostName github.com
+    User shawn
+    IdentityFile ~/.ssh/id_ed25519_github
+
+# Example: Google
+Host google.com
+    HostName google.com
+    User shawn
+    IdentityFile ~/.ssh/id_ed25519_google
