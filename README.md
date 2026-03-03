@@ -65,9 +65,3 @@ docs/01-overview.md
 ```
 For the full walkthrough of the lab, see:
 [docs/02-project-overview.md](docs/02-project-overview.md)
-
-## 日本語
-
-このリポジトリは、RHEL 系 Linux サーバーのセキュリティ強化手順を再現可能な形でまとめたものです。
-SSH 設定、ファイアウォール、システムパラメータ、監査ログなどの基本的なハードニングを含みます。
-詳細は docs/ ディレクトリをご覧ください。
