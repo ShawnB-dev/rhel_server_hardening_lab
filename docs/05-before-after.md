@@ -1,5 +1,7 @@
 # Before and After Comparison
 
+> **日本語版:** [05-Before-After比較.md](05-Before-After比較.md)
+
 This document summarizes key configuration changes made during the hardening process. Full configuration files are stored in the `configs/` directory.
 
 ## SSH Configuration

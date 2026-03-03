@@ -1,5 +1,13 @@
 # RHEL Server Hardening Lab
 
+---
+
+## 日本語の説明
+
+このリポジトリは、RHEL 系 Linux サーバーに対して実施したセキュリティハードニング手順を、再現可能な形でまとめたものです。詳細は上記の日本語ドキュメントをご覧ください。
+
+---
+
 A reproducible security hardening lab for Red Hat Enterprise Linux–based systems.  
 This project demonstrates practical Linux administration, SSH hardening, firewall configuration, auditing, and baseline security controls.
 

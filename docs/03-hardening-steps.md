@@ -1,5 +1,7 @@
 # Hardening Steps
 
+> **日本語版:** [03-ハードニング手順.md](03-ハードニング手順.md)
+
 ## SSH Configuration
 - Disable root login  
 - Disable password authentication  

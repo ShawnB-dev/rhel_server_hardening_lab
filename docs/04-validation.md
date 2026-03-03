@@ -1,5 +1,7 @@
 # Validation and Testing
 
+> **日本語版:** [04-検証とテスト.md](04-検証とテスト.md)
+
 Validation ensures that each hardening step is applied correctly and that the system remains functional. This document summarizes the checks performed after applying the baseline.
 
 ## SSH Validation

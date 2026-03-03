@@ -1,5 +1,7 @@
 # Security Rationale
 
+> **日本語版:** [06-セキュリティ上の理由.md](06-セキュリティ上の理由.md)
+
 This document explains the reasoning behind each major hardening decision. Understanding the “why” behind each change is essential for maintaining and adapting the baseline.
 
 ## SSH Hardening
