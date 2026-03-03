@@ -29,6 +29,18 @@
 A reproducible security hardening lab for Red Hat Enterprise Linux–based systems.  
 This project demonstrates practical Linux administration, SSH hardening, firewall configuration, auditing, and baseline security controls.
 
+## Why This Project Matters
+
+This lab demonstrates practical Linux administration and security hardening skills that are directly relevant to real-world IT infrastructure roles. The project shows:
+
+- Ability to apply and validate security baselines  
+- Familiarity with SSH, firewalld, sysctl, and auditd  
+- Documentation discipline and reproducibility  
+- Bilingual communication (English and Japanese)  
+- Real execution, verified through screenshots and before/after configs  
+
+These are core competencies expected in enterprise environments worldwide.
+
 ## Scope
 This lab applies a minimal but realistic hardening baseline suitable for small enterprise or homelab environments.
 
@@ -38,6 +50,14 @@ This lab applies a minimal but realistic hardening baseline suitable for small e
 - Audit logging
 - Service review and cleanup
 
+## Architecture
+
+```script
+┌──────────────────────┐        SSH (Key Authentication)        ┌────────────────────────┐
+│  Admin Workstation   │  ------------------------------------> │   RHEL Hardened Server │
+│  (Windows / Linux)   │                                        │   (VM or Bare Metal)   │
+└──────────────────────┘                                        └────────────────────────┘
+```
 ## Repository Structure
 - `docs/` — full walkthrough and explanations  
 - `configs/` — before/after configuration files  
