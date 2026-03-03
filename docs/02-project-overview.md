@@ -29,7 +29,7 @@ sudo dnf upgrade -y
 ```
 
 **Screenshot**  
-![System update screenshot](screenshots/rhelhardeningdnfupdateandupgrade.png)
+![System update screenshot](../screenshots/rhelhardeningdnfupdateandupgrade.png)
 
 ---
 
@@ -50,7 +50,7 @@ sudo usermod -aG wheel shawn-admin
 
 
 **Screenshot**  
-![User creation screenshot](screenshots/rhelhardeninguseradd.png)
+![User creation screenshot](../screenshots/rhelhardeninguseradd.png)
 
 ---
 
@@ -75,7 +75,7 @@ sudo systemctl status sshd
 ```
 
 **SSH Status**  
-![SSH status screenshot](screenshots/rhelhardeningsshdconfig.png)
+![SSH status screenshot](../screenshots/rhelhardeningsshdconfig.png)
 
 **Configuration File**  
 ```bash
@@ -98,7 +98,7 @@ sudo firewall-cmd --list-all
 ```
 
 **Firewall Hardening**  
-![Firewalld rules screenshot](screenshots/rhelhardeningfirewall.png)
+![Firewalld rules screenshot](../screenshots/rhelhardeningfirewall.png)
 
 **Configuration Output**  
 ```bash
@@ -122,7 +122,7 @@ getenforce
 ```
 
 **SELinux Enforcing**  
-![SELinux enforcing screenshot](screenshots/rhelhardeninggetenforce.png)
+![SELinux enforcing screenshot](../screenshots/rhelhardeninggetenforce.png)
 
 ---
 
@@ -142,7 +142,7 @@ chmod +x system_audit.sh
 ```
 
 **Audit Script Output**  
-![Audit script output screenshot](screenshots/rhelhardeningsystemreport.png)
+![Audit script output screenshot](../screenshots/rhelhardeningsystemreport.png)
 
 ---
 
