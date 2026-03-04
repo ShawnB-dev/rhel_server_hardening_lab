@@ -8,6 +8,7 @@
 - [05 Before/After Comparison](05-before-after.md)
 - [06 Security Rationale](06-security-rationale.md)
 - [07 Screenshots](07-screenshots.md)
+- [08 How To Reproduce this Lab](08-how-to-reproduce.md)
 
 **日本語**
 - [01 概要](01-概要.md)
@@ -17,3 +18,4 @@
 - [05 Before/After 比較](05-Before-After比較.md)
 - [06 セキュリティ上の理由](06-セキュリティ上の理由.md)
 - [07 スクリーンショット](07-スクリーンショット.md)
+- [08 再現手順](08-再現手順.md)
