@@ -60,8 +60,8 @@ This lab applies a minimal but realistic hardening baseline suitable for small e
 
 ```script
 ┌──────────────────────┐        SSH (Key Authentication)        ┌────────────────────────┐
-│  Admin Workstation       │  ------------------------------------> │   RHEL Hardened Server │
-│  (Windows / Linux)       │                                        │   (VM or Bare Metal)   │
+│  Admin Workstation       │  ------------------------------------> │       RHEL Hardened Server │
+│  (Windows / Linux)       │                                        │       (VM or Bare Metal)   │
 └──────────────────────┘                                        └────────────────────────┘
 ```
 ## Repository Structure
